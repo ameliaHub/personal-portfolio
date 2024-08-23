@@ -107,11 +107,31 @@ body{
 }
 
 
+
+
 /*reused style*/
 
 .container{
     padding-inline: 15px;
 }
+
+
+.social-link{
+    font-size: 25px;
+    color: black;
+}
+
+.social-link ion-icon {
+    --ionicon-stroke-width: 40px;
+}
+
+.social-link:is(:hover, :focus){
+    color: rgb(80, 77, 77);
+    transition: var(--transition);
+}
+
+
+/*header*/
 
 .header .container{
     height: 70px;
@@ -147,12 +167,12 @@ body{
 }
 
 .nav-toggle-btn:is(:hover, :focus) span{
-    background: var(--aqua)
+    /*background: var(--aqua)*/
 }
 
 .nav-toggle-btn.active span{
     transform: scaleX(1);
-    background: var(--aqua);
+    background: rgb(80, 77, 77);
 }
 
 .navbar{
@@ -164,7 +184,7 @@ body{
     max-width: 260px;
     width: 100%;
     padding: 20px 25px;
-    border: 1px solid var(--aqua);
+    /*border: 1px solid var(--aqua);*/
     box-shadow: var(--shadow-1);
     visibility: hidden;
     transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
@@ -185,7 +205,7 @@ body{
 }
 
 .navbar-link:is(:hover, :focus){
-    color: var(--aqua);
+    /*background: --aqua*/
 }
 
 .overlay{
@@ -203,4 +223,61 @@ body{
 .overlay .active{
     opacity: 0.7;
     pointer-events: all;
+}
+
+/*profile section*/
+#profile{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.profile-section{
+    text-align: center;
+}
+
+.profile-section .text-p1{
+    font-weight: var(--fw-400);
+    font-size: var(--fs-5);
+}
+
+.profile-section .text-p2{
+    font-weight: var(--fw-400);
+    font-size: var(--fs-5);
+}
+
+.title{
+    font-size: var(--fs-3);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.btn{
+    font-weight: var(--fw-600);
+    transition: var(--transition);
+    padding: 0.5rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background: white;
+    border: black 0.1rem solid;
+}
+
+.btn:is(:hover, :focus){
+    color: white;
+    background: rgb(80, 77, 77);
+    cursor: pointer;
+    border: rgb(80, 77, 77) 0.1rem solid;
+    
+}
+
+.socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
 }
