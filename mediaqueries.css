@@ -1,0 +1,11 @@
+@media screen and (min-width: 311px){
+    .contact-container{
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .contact-container{
+        max-width: 50%;
+    }
+}
