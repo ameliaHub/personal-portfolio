@@ -315,16 +315,18 @@ body{
 }
 
 .project-img{
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     border-radius: 2rem;
 }
 
+
+
 .all-projects-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
     margin-top: 1rem;
     gap:2rem
 }
@@ -345,13 +347,15 @@ body{
 
 .article-container{
     display: flex;
-    text-align: initial;
+    align-items: center;
     justify-content: center;
+    max-width: 60vh; 
+    max-height: 60vh;
 
 }
 
 .project-container .project-title{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 
