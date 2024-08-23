@@ -229,7 +229,8 @@ body{
 #profile{
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
+    align-items: center;
 }
 
 .profile-section{
@@ -281,3 +282,59 @@ body{
     margin-top: 1rem;
     gap: 1rem;
 }
+
+
+/*profile section*/
+
+.text-p1{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.project-img{
+    width: 70%;
+    height: 70%;
+    border-radius: 2rem;
+}
+
+.all-projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 2rem
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: black 0.1rem solid;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.project-container .btn-container{
+    flex-wrap: wrap;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    justify-content: center;
+
+}
+
+.project-container .project-title{
+    margin-top: 1rem;
+}
+
+
+
+
+
