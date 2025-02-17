@@ -1,157 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amelia</title>
 
-
-    <link rel="shorcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shorcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!--MEDIAQUERIES-->
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
 
     <!--GOOGLE FONTS-->
 
     <!--JS-->
     <script src="script.js" defer></script>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <!--HEADER-->
     <header class="header" data-header>
-        <div class="container">
-            <div class="overlay" data-overlay></div>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
 
-            <p class="logo">amelia</p>
-            
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#profile" class="navbar-link" data-nav-link>Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="navbar-link" data-nav-link>Proyectos</a>
-                    </li>
-                </ul>
-            </nav>
+        <p class="logo">amelia</p>
 
-            <div class="header-actions">
-                <button class="nav-toggle-btn" data-nav-toggle-btn>
-                    <span class="one"></span>
-                    <span class="two"></span>
-                    <span class="three"></span>
-                </button>
-            </div>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#profile" class="navbar-link" data-nav-link>Inicio</a>
+            </li>
+            <li>
+              <a href="#projects" class="navbar-link" data-nav-link
+                >Proyectos</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="nav-toggle-btn" data-nav-toggle-btn>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
         </div>
+      </div>
     </header>
 
     <main>
-        <article>
-            <!--PROFILE-->
-            <section class="section hero" id="profile">
-                <div class="container">
-                    
-                    <div class="profile-section">
-                        <p class="text-p1">Hola, soy</p>
-                        <h1 class="title">amelia</h1>
-                        <p class="text-p2">Desarrolladora Frontend</p>
-                        <div class="btn-container">
-                            <button class="btn" onclick="window.open('./assets/cv-amelia-es-en.pdf')">Descargar CV</button>
-                            <button class="btn" onclick="location.href='./#contact'">Contacto</button>
-                        </div>
-                        <div class="socials-container">
-                            <a href="https://www.linkedin.com/in/pilarbermudezcervilla/" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                            <a href="https://github.com/ameliaHub" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
+      <article>
+        <!--PROFILE-->
+        <section class="section hero" id="profile">
+          <div class="container">
+            <div class="profile-section">
+              <p class="text-p1">Hola, soy</p>
+              <h1 class="title">amelia</h1>
+              <p class="text-p2">Desarrolladora Frontend</p>
+              <div class="btn-container">
+                <button
+                  class="btn"
+                  onclick="window.open('./assets/cv-amelia-es-en.pdf')"
+                >
+                  Descargar CV
+                </button>
+                <button class="btn" onclick="location.href='./#contact'">
+                  Contacto
+                </button>
+              </div>
+              <div class="socials-container">
+                <a
+                  href="https://www.linkedin.com/in/pilarbermudezcervilla/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a
+                  href="https://github.com/ameliaHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!--PROYECTOS-->
+      <article>
+        <section class="section" id="projects">
+          <div class="container">
+            <div class="projects-section">
+              <div class="text-section">
+                <p class="text-p1">Explora mis</p>
+                <h1 class="title">proyectos</h1>
+              </div>
+
+              <div class="all-projects-container">
+                <div class="project-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/images/cv-builder-imagen.png"
+                      alt="Proyecto uno"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="project-title">CV-Builder</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn"
+                      onclick="window.open('https://github.com/ameliaHub/cv-builder','_blank')"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn"
+                      onclick="window.open('https://cv-builder-iota.vercel.app','_blank')"
+                    >
+                      Vista previa
+                    </button>
+                  </div>
                 </div>
-            </section>
-        </article>
 
-
-        <!--PROYECTOS-->
-        <article>
-            <section class="section" id="projects">
-                <div class="container">
-
-                    <div class="projects-section">
-                        <div class="text-section">
-                            <p class="text-p1">Explora mis</p>
-                            <h1 class="title">proyectos</h1>
-                        </div>
-                        
-                    
-                        <div class="all-projects-container">
-
-                            <div class="project-container">
-                                <div class="article-container">
-                                    <img src="./assets/images/proyecto-imagen.PNG" alt="Proyecto uno"
-                                    class="project-img">
-                                </div>
-                                <h2 class="project-title">Ridex</h2>
-                                <div class="btn-container">
-                                    <button class="btn" onclick="window.open('https://github.com/ameliaHub/ridex--codewithsadee','_blank')">Github</button>
-                                    <button class="btn" onclick="window.open('https://ameliahub.github.io/ridex--codewithsadee/','_blank')">Vista previa</button>
-                                </div>
-                            </div>
-
-                            <div class="project-container">
-                                <div class="article-container">
-                                    <img src="./assets/images/portfolio-imagen.PNG" alt="Proyecto dos"
-                                    class="project-img">
-                                </div>
-                                <h2 class="project-title">Portafolio</h2>
-                                <div class="btn-container">
-                                    <button class="btn" onclick="window.open('https://github.com/ameliaHub/personal-portfolio','_blank')">Github</button>
-                                    <button class="btn" onclick="location.href='./#profile'">Vista previa</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                <div class="project-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/images/portfolio-imagen.PNG"
+                      alt="Proyecto dos"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="project-title">Portafolio</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn"
+                      onclick="window.open('https://github.com/ameliaHub/personal-portfolio','_blank')"
+                    >
+                      Github
+                    </button>
+                    <button class="btn" onclick="location.href='./#profile'">
+                      Vista previa
+                    </button>
+                  </div>
                 </div>
-            </section>
-        </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
 
-        <article>
-            <section class="section" id="contact">
-                <div class="container">
-                    <h1 class="title">Contacto</h1>
-                    <div class="contact-container">
+      <article>
+        <section class="section" id="contact">
+          <div class="container">
+            <h1 class="title">Contacto</h1>
+            <div class="contact-container">
+              <div class="contact-info-container">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>
+                  <a href="mailto:pilaribermu@gmail.com"
+                    >pilaribermu@gmail.com</a
+                  >
+                </p>
+              </div>
 
-                        <div class="contact-info-container">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <p>
-                                <a href="mailto:pilaribermu@gmail.com" >pilaribermu@gmail.com</a>
-                            </p>
-                        </div>
-
-                        <div class="contact-info-container">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                            <p>
-                                <a href="https://www.linkedin.com/in/pilarbermudezcervilla/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </article>
+              <div class="contact-info-container">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/pilarbermudezcervilla/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
-    
-
 
     <!--IONICON-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
