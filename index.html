@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>amelia</title>
+    <title>portfolio</title>
 
     <link
       rel="shorcut icon"
@@ -28,7 +28,7 @@
       <div class="container">
         <div class="overlay" data-overlay></div>
 
-        <p class="logo">amelia</p>
+        <p class="logo"><!--amelia--></p>
 
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
@@ -57,39 +57,54 @@
       <article>
         <!--PROFILE-->
         <section class="section hero" id="profile">
-          <div class="container">
-            <div class="profile-section">
-              <p class="text-p1">Hola, soy</p>
-              <h1 class="title">amelia</h1>
-              <p class="text-p2">Desarrolladora Frontend</p>
-              <div class="btn-container">
-                <button
-                  class="btn"
-                  onclick="window.open('./assets/cv-amelia-es-en.pdf')"
-                >
-                  Descargar CV
-                </button>
-                <button class="btn" onclick="location.href='./#contact'">
-                  Contacto
-                </button>
-              </div>
-              <div class="socials-container">
-                <a
-                  href="https://www.linkedin.com/in/pilarbermudezcervilla/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                >
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-                <a
-                  href="https://github.com/ameliaHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                >
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
+          <div class="profile-container">
+            <div class="profile-picture-wrapper">
+              <img
+                src="./assets/images/profile-picture.jpg"
+                alt="profile picture"
+                class="profile-picture"
+              />
+            </div>
+            <div class="container">
+              <div class="profile-section">
+                <p class="text-p1">
+                  Estudiante con dos años de Ingeniería Informática y
+                  Matemáticas cursados, con un enfoque actual en diseño web y
+                  creación de proyectos. Experiencia en desarrollo frontend
+                  utilizando HTML, CSS, JavaScript y React. Manejo control de
+                  versiones con Git, gestión de paquetes con npm, empaquetado de
+                  modulos con Webpack y conocimiento en desarrollo guiado por
+                  pruebas (TDD) utilizando Jest
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn"
+                    onclick="window.open('./assets/cv-amelia-es-en.pdf')"
+                  >
+                    Descargar CV
+                  </button>
+                  <button class="btn" onclick="location.href='./#contact'">
+                    Contacto
+                  </button>
+                </div>
+                <div class="socials-container">
+                  <a
+                    href="https://www.linkedin.com/in/pilarbermudezcervilla/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                  <a
+                    href="https://github.com/ameliaHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -102,8 +117,7 @@
           <div class="container">
             <div class="projects-section">
               <div class="text-section">
-                <p class="text-p1">Explora mis</p>
-                <h1 class="title">proyectos</h1>
+                <h1 class="title">Proyectos</h1>
               </div>
 
               <div class="all-projects-container">
@@ -132,6 +146,7 @@
                   </div>
                 </div>
 
+                <!--
                 <div class="project-container">
                   <div class="article-container">
                     <img
@@ -153,6 +168,7 @@
                     </button>
                   </div>
                 </div>
+                -->
               </div>
             </div>
           </div>
@@ -162,27 +178,29 @@
       <article>
         <section class="section" id="contact">
           <div class="container">
-            <h1 class="title">Contacto</h1>
-            <div class="contact-container">
-              <div class="contact-info-container">
-                <ion-icon name="mail-outline"></ion-icon>
-                <p>
-                  <a href="mailto:pilaribermu@gmail.com"
-                    >pilaribermu@gmail.com</a
-                  >
-                </p>
-              </div>
+            <div class="contact-title-info-container">
+              <h1 class="title">Contacto</h1>
+              <div class="contact-container">
+                <div class="contact-info-container">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <p>
+                    <a href="mailto:pilaribermu@gmail.com"
+                      >pilaribermu@gmail.com</a
+                    >
+                  </p>
+                </div>
 
-              <div class="contact-info-container">
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <p>
-                  <a
-                    href="https://www.linkedin.com/in/pilarbermudezcervilla/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >LinkedIn</a
-                  >
-                </p>
+                <div class="contact-info-container">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/pilarbermudezcervilla/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >LinkedIn</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
